@@ -37,7 +37,7 @@ SensorsData Server::readSensors()
 	return tmp;
 }
 
-void handleClient()
+void Server::handleClient()
 {
 	EthernetClient client = srv.available();
 	if (client)
@@ -74,7 +74,7 @@ void handleClient()
 	}
 }
 
-void sendJSONData(EthernetClient client)
+void Server::sendJSONData(EthernetClient client)
 {
 	client.println("{");
 	client.println("\t\"OilPressure\":\t\"");
