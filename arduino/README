@@ -1,0 +1,23 @@
+The files contained in this folder are used for building the Arduino sketch.
+
+It uses the Ino (http://inotool.org/) toolset to build and compile the sketch, as well
+as flash it to the board.
+
+PLEASE NOTE: That not all sensors may act the same way, therefore readings may differ
+             between sensors.  You might need to tweak the code/equations to produce
+             accurate readings with you're setup.
+
+Building:
+	It's as simple as running: make
+
+Flashing to the Arduino:
+	To do this is a little bit different.  You need to figure out which /dev/tty* device
+	you're Arduino is.  (Usually will be either /dev/ttyUSB0 or /dev/ttyAMC0 depending on model.)
+
+	Once you've located your device, simply do this:
+		ARDUINOTTY=/dev/ttyUSB0; make install
+
+	This should flash the sketch to the arduino's EPROM.  Once that is done you're arduino is
+	ready to be used as a transputer hardware interface. :)
+
+

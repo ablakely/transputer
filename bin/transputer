@@ -1,0 +1,15 @@
+#!/usr/bin/env node
+
+/*
+ * transputer: Computer system project for 1971 Volkswagen Transporter
+ *
+ * http://ephasic.org/transputer
+ * Written by Aaron Blakely <aaron@ephasic.org>
+ */
+
+var Transputer 	= require("../index.js");
+
+var computer	= new Transputer({
+	/* Instance Configuration Vars -- Defults should work fine */
+
+});

@@ -1,0 +1,6 @@
+#ifndef TRANSPUTER_CONFIG_H
+#define TRANSPUTER_CONFIG_H
+
+#define OILPRESSURE_SENSOR 52
+
+#endif

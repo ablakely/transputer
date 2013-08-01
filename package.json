@@ -1,0 +1,20 @@
+{
+	"author"	:		"Aaron Blakely <aaron@ephasic.org>",
+	"name"		:		"transputer",
+	"description"	:		"Computer system for 1971 Volkswagen Transporter",
+	"version"	:		"0.0.1",
+	"main"		:		"./index.js",
+	"bin"		:		{
+						"transputer"	:	"./bin/transputer"
+					},
+	"dependencies"	:		{
+						"express"	:	"*",
+						"ejs"		:	"*",
+						"socket.io"	:	"*",
+						"request"	:	"*"
+					},
+	"engines"	:		{
+						"node"		:	"*"
+	}
+}
+	
