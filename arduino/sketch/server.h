@@ -10,18 +10,20 @@ class Server {
 	public:
 		void begin();
 		void  poll();
+
 	private:
 		struct SensorsData {
 			float OilPressure;
-		}
+		};
 
-		long lastReadTime;
-		byte MacAddr[];
-		IPAddress ip;
-		EthernetServer srv;
-		void readSensors();
 		void handleClient();
-		void sendJSONData();
+		void sendJSONData(EthernetClient client);
+		byte MacAddr[];
+		long lastReadTime;
+		IPAddress ip;
+		SensorsData sensors_vals;
+		SensorsData readSensors();
+		EthernetServer srv;
 };
 
 #endif
