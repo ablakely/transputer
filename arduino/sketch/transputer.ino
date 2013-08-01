@@ -1,5 +1,5 @@
 /*
- * transputre.ino: Transputer Hardware Interface
+ * transputer.ino: Transputer Hardware Interface
  *
  * http://ephasic.org/transputer
  * Written by Aaron Blakely <aaron@ephasic.org>
